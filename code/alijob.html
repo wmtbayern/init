@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<!-- <meta charset="utf-8"> -->
+		<meta charset="utf-8" name="viewport" content="width=760, maximum-scale=1.0, user-scalable=yes" />
+		<meta name="data-spm" content="a2obv">
+		<title>  职位搜索 - 阿里巴巴集团招聘  </title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://i.alipayobjects.com/i/localhost/ico/201404/2WPSMmbEyj.ico"/>
+		<link rel="stylesheet" href="//g.alicdn.com/platform/common/s/1.1/global/global.css">	
+		<link rel="stylesheet" type="text/css" href="//job.alibaba.com/assets/zhaopin/css/pob-box.css" />
+		<link rel="stylesheet" type="text/css" href="//job.alibaba.com/assets/zhaopin/css/comment.css?v=201808311750" />
+		<link rel="stylesheet" type="text/css" href="//job.alibaba.com/assets/zhaopin/js/lib/jscalendar/skin/default/datepicker.css?v=201808311750">
+		<script type="text/javascript" src="//job.alibaba.com/assets/zhaopin/js/lib/jscalendar/wdatepicker.js?v=201808311750"></script>
+		<script type="text/javascript" src="//job.alibaba.com/assets/zhaopin/js/lib/sea.js?v=201808311750"></script>
+        <script type="text/javascript" src="//job.alibaba.com/assets/zhaopin/js/config.js?v=201808311750"></script>
+        <script type="text/javascript" src="//alinw.alicdn.com/secdev/pointman/js/index.js?t=201501082043" app="alinw"></script>
+		<!-- <style>
+			.head {background-color: #2C2F33;}
+			.head .head-main{ overflow: hidden; }
+			.head, .head .head-menu li.back, .head .logo {height: 52px;}
+			.head .logo {height: 20px;margin-top: 16px; float: left;}
+			.head .head-menu li a, .head .login {line-height: 52px;}
+			.head .head-menu {width: 703px;}
+			.head .login {width: 340px;}
+			.head .head-menu .current-cat a {color: #F37327}
+			#menu li a:hover {color: #F37327}
+		</style> -->
+	</head>
+<body data-spm="11410903"><script async src="//g.alicdn.com/platform/common/s/1.1/monitor/index.js" id="tb-beacon-aplus" exparams=""></script>
+	    <style>
+  #global-recruit-ads{
+    padding: 5px;
+    text-align: center;
+    color: #666;
+    background: #FDFECE;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+
+<div id="global-recruit-ads" style="display:none;"></div>
+
+	<!-- head:S -->
+	<div class="head">
+		<div class="head-main">
+			<div class="head-menu">
+				<div class="login" style="opacity: 0.8;">
+					欢迎来到阿里巴巴集团招聘！
+					<span id="J-login">
+																		<a href='https://passport.alibaba.com/login.htm?appName=hrjob&params=https%3A%2F%2Fjob.alibaba.com%2F%2Fzhaopin%2FpositionList.htm%3FkeyWord%3DcHl0aG9u%26_input_charset%3DUTF-8%26' target="_top">登录</a>
+							| <a href="http://member1.taobao.com/member/newbie.htm">注册</a>
+																</span>
+				</div>
+				<ul class="" id="menu">
+					<li ><a href="https://job.alibaba.com/zhaopin/index.htm">首 &nbsp;&nbsp;页</a></li>
+					<!-- <li class="line"></li> -->
+					<li  class="current current-cat" value="1"  ><a   href="https://job.alibaba.com/zhaopin/positionList.htm">社会招聘</a></li>
+					<!-- <li class="line"></li> -->
+					<li><a href="https://campus.alibaba.com" target="blank">校园招聘</a></li>
+					<li ><a href="https://job.alibaba.com/zhaopin/about.htm">了解阿里</a></li>
+					<!-- <li class="line"></li> -->
+					<li ><a   href="https://job.alibaba.com/zhaopin/apply.htm">个人中心</a></li>
+					<!-- <li class="back" id="slide"></li> -->
+				</ul>
+			</div>
+			<a href="https://job.alibaba.com/zhaopin/index.htm" class="logo" style="text-align:right;width: 125px;" ><img src="https://img.alicdn.com/tfs/TB1Zv8_lxSYBuNjSspjXXX73VXa-390-63.png" height="20" alt=""></a>
+			<i style="float:left;color:white;font-style:normal;font-size:20px;line-height:52px;margin: 0 10px;opacity: 0.8;">|</i>
+            <i style="float:left;color:white;font-style:normal;font-size:14px;line-height:54px;opacity: 0.8;">社招官网</i>
+		</div>
+	</div>
+	<style type="text/css">
+.tip{
+	width: 200px;
+	text-align: center;
+	position: relative;
+	border:1px solid #ccc;
+	height: 50px;
+	line-height: 50px;
+	left: 50%;
+	margin-top: 50px;
+	transform: translateX(-50%);
+}
+.tip-container{
+	position: absolute;
+	box-shadow: 2px 2px 5px #f9f9f9;
+	z-index: 999;
+	display: none;
+}
+.tip-container .tip-point-top,
+.tip-container .tip-point-bottom,
+.tip-container .tip-point-left,
+.tip-container .tip-point-right{
+	border:1px solid #dcdcdc;
+	position: relative;
+	background: white;
+}
+.tip-content{
+	padding:5px 10px;
+	background: white;
+	font-size: 12px;
+	line-height: 1.7;
+	font-family: "Helvetica Neue",Helvetica,Arial,"MicroSoft YaHei";
+}
+.tip-container .tip-point-top::after,
+.tip-container .tip-point-top::before,
+.tip-container .tip-point-bottom::after,
+.tip-container .tip-point-bottom::before{
+	content:"";
+	position: absolute;
+	border:solid transparent;
+	left: 50%;
+	width: 0;
+	height: 0;
+	transform: translate3d(-50%,0,0);
+	-webkit-transform: translate3d(-50%,0,0);
+}
+
+.tip-container .tip-point-right::after,
+.tip-container .tip-point-right::before,
+.tip-container .tip-point-left::after,
+.tip-container .tip-point-left::before{
+	content:"";
+	position: absolute;
+	border:solid transparent;
+	top: 50%;
+	width: 0;
+	height: 0;
+	transform: translate3d(0,-50%,0);
+	-webkit-transform: translate3d(0,-50%,0);
+
+}
+/*tip-point-top*/
+.tip-container .tip-point-top::after{
+	border-top-color: #fff;
+	top: 100%;
+	border-width: 5px;
+}
+.tip-container .tip-point-top::before {
+	border-top-color: #dcdcdc;
+	top: 100%;
+	border-width: 7px;
+}
+/*tip-point-bottom*/
+.tip-container .tip-point-bottom::after{
+	border-bottom-color: #fff;
+	bottom: 100%;
+	border-width: 5px;
+}
+.tip-container .tip-point-bottom::before {
+	border-bottom-color: #dcdcdc;
+	bottom: 100%;
+	border-width: 7px;
+}
+/*tip-point-right*/
+.tip-container .tip-point-right::after{
+	border-right-color: #fff;
+	right: 100%;
+	border-width: 5px;
+}
+.tip-container .tip-point-right::before {
+	border-right-color: #dcdcdc;
+	right: 100%;
+	border-width: 7px;
+}
+/*tip-point-left*/
+.tip-container .tip-point-left::after{
+	border-left-color: #fff;
+	left: 100%;
+	border-width: 5px;
+}
+.tip-container .tip-point-left::before {
+	border-left-color: #dcdcdc;
+	left: 100%;
+	border-width: 7px;
+}
+</style>
+<script src="https://assets.alicdn.com/g/tb/login/0.2.5/havanalogin/js/mini-login-embedder-min.js"></script>
+<div class="banner">
+    <!-- TMS:S -->
+    <div class="slidebox" id="J_Slidebox">
+        <ul class="slidepic">
+			    <style>
+  .slidepic li a{
+      position: relative;
+      height:150px;
+  }
+  .slidepic li a img{
+      position:absolute;
+      left:50%;
+      margin-left:-800px;
+  }
+</style>
+
+
+    <li>
+        <a target="_blank" href=https://job.alibaba.com/zhaopin/positionList.htm?keyWord=JXU2REQ4JXU1QjlEJXU2MjgwJXU2NzJGJXU5MEU4&_input_charset=UTF-8&#page/1 class="referral-index-hd-top-item">
+            <img src=https://img.alicdn.com/tfs/TB16z5UNMHqK1RjSZFkXXX.WFXa-1600-160.jpg alt=阡默-淘宝技术-新零售技术事业群-小鱼/>
+        </a>
+    </li>
+
+        </ul>
+        <div class="slidebtn">
+            <ul>
+                <li class="current"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- TMS:E -->
+</div>
+<!-- banner:E -->
+<div class="main-box layout" id="J-position-list">
+	<div class="left-box">
+		<h2 class="left-title">职位搜索</h2>
+		<div class="lf-border-box">
+			<div class="left-search-box">
+				<form class="J-search-form">
+				<div class="search-box">
+					<input type="text" id="keyword"  maxlength="30" topic="请输入职位关键词" class="search-text" />
+					<input class="search-btn" type="button" value="" />
+					<input type="hidden" name=“dress-check” id="dress-check" />
+					<input type="hidden" name=“position-check” id="position-check" />
+					<input type="hidden" name=“position-first-check” id="position-first-check" />
+				</div>
+				</form>
+				<div class="search-tab ">
+					<div class="search-li-box layout">
+						<b>工作地点：</b>
+						<span class="r-span"> <a href="javascript:;" data-check-type="dress" rel="all" style="display:none">全部</a><span id="search-dress"><a data-check-type="dress" rel="杭州" href="javascript:;">杭州</a><a href="javascript:;" rel="北京" data-check-type="dress">北京</a><a href="javascript:;" rel="上海" data-check-type="dress">上海</a><a href="javascript:;" rel="深圳" data-check-type="dress">深圳</a></span> <a class="check-more-dress" href="javascript:;" data-current="4">更多>></a>
+						</span>
+					</div>
+					<div class="search-li-box layout">
+						<b>职位类别：</b>
+						<span class="r-span">
+							<a class="current" href="javascript:;" style="display:none">全部</a>
+							<a href="javascript:;" rel="综合类" class="position-child" data-child-id="1">综合类</a>
+							<a href="javascript:;" rel="技术类" class="position-child" data-child-id="2">技术类</a>
+							<a href="javascript:;" rel="产品类" class="position-child" data-child-id="3">产品类</a>
+							<a href="javascript:;" rel="运营类" class="position-child" data-child-id="4">运营类</a>
+							<a href="javascript:;" rel="设计类" class="position-child" data-child-id="5">设计类</a>
+							<a href="javascript:;" rel="客服类" class="position-child" data-child-id="6">客服类</a>
+							<a href="javascript:;" rel="市场拓展" class="position-child" data-child-id="7">市场拓展</a>
+							<a href="javascript:;" rel="数据类" class="position-child" data-child-id="8">数据类</a>
+							<a href="javascript:;" rel="金融类" class="position-child" data-child-id="9">金融类</a>
+							<a href="javascript:;" rel="销售类" class="position-child" data-child-id="10">销售类</a>
+							<a href="javascript:;" rel="外贸类" class="position-child" data-child-id="11">外贸类</a>
+						</span>
+					</div>
+					<div class="search-bar" id="position-child">
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>综合类</span>
+							<a href="javascript:;" data-check-type="positon" rel="IT">IT</a>
+							<a href="javascript:;" data-check-type="positon" rel="人力资源">人力资源</a>
+							<a href="javascript:;" data-check-type="positon" rel="公司事务">公司事务</a>
+							<a href="javascript:;" data-check-type="positon" rel="其它">其它</a>
+							<a href="javascript:;" data-check-type="positon" rel="培训">培训</a>
+							<a href="javascript:;" data-check-type="positon" rel="工程建设">工程建设</a>
+							<a href="javascript:;" data-check-type="positon" rel="法务">法务</a>
+							<a href="javascript:;" data-check-type="positon" rel="物流">物流</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="行政">行政</a>
+							<a href="javascript:;" data-check-type="positon"  rel="财务及内控">财务及内控</a>
+							<a href="javascript:;" data-check-type="positon" rel="采购">采购</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>技术类</span>
+							<a href="javascript:;" data-check-type="positon" rel="前端">前端</a>
+							<a href="javascript:;" data-check-type="positon" rel="安全">安全</a>
+							<a href="javascript:;" data-check-type="positon" rel="开发">开发</a>
+							<a href="javascript:;" data-check-type="positon" rel="数据">数据</a>
+							<a href="javascript:;" data-check-type="positon" rel="算法">算法</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合">综合</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="质量保证">质量保证</a>
+							<a href="javascript:;" data-check-type="positon" rel="运维">运维</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>产品类</span>
+							<a href="javascript:;" data-check-type="positon" rel="商业型">商业型</a>
+							<a href="javascript:;" data-check-type="positon" rel="平台型">平台型</a>
+							<a href="javascript:;" data-check-type="positon" rel="用户型">用户型</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>运营类</span>
+							<a href="javascript:;" data-check-type="positon" rel="产品运营">产品运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="内容运营">内容运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="商家运营">商家运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="安全运营">安全运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="无线产品运营">无线产品运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="无线内容运营">无线内容运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="无线运营综合">无线运营综合</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="行业运营">行业运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="规则管理">规则管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="运营综合">运营综合</a>
+							<a href="javascript:;" data-check-type="positon" rel="频道/类目运营">频道/类目运营</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>设计类</span>
+							<a href="javascript:;" data-check-type="positon" rel="交互">交互</a>
+							<a href="javascript:;" data-check-type="positon" rel="用户体验与研究">用户体验与研究</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="视觉">视觉</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>客服类</span>
+							<a href="javascript:;" data-check-type="positon" rel="业务分析与运营">业务分析与运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="交易保障">交易保障</a>
+							<a href="javascript:;" data-check-type="positon" rel="品质提升">品质提升</a>
+							<a href="javascript:;" data-check-type="positon" rel="商家管理">商家管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="外包运营">外包运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="客户接待">客户接待</a>
+							<a href="javascript:;" data-check-type="positon" rel="客户支持">客户支持</a>
+							<a href="javascript:;" data-check-type="positon" rel="客服培训">客服培训</a>
+							<a href="javascript:;" data-check-type="positon" rel="技术服务">技术服务</a>
+							<a href="javascript:;" data-check-type="positon" rel="服务安全">服务安全</a>
+							<a href="javascript:;" data-check-type="positon" rel="服务运营">服务运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="流程优化">流程优化</a>
+							<a href="javascript:;" data-check-type="positon" rel="热线&在线">热线&在线</a>
+							<a href="javascript:;" data-check-type="positon" rel="现场管理">现场管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合服务">综合服务</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="质量保证">质量保证</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>市场拓展</span>
+							<a href="javascript:;" data-check-type="positon" rel="BD">BD</a>
+							<a href="javascript:;" data-check-type="positon" rel="市场">市场</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>数据类</span>
+							<a href="javascript:;" data-check-type="positon" rel="商业数据分析">商业数据分析</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="网站运营数据分析">网站运营数据分析</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>金融类</span>
+							<a href="javascript:;" data-check-type="positon" rel="业务发展">业务发展</a>
+							<a href="javascript:;" data-check-type="positon" rel="催收">催收</a>
+							<a href="javascript:;" data-check-type="positon" rel="决策科学">决策科学</a>
+							<a href="javascript:;" data-check-type="positon" rel="反洗钱">反洗钱</a>
+							<a href="javascript:;" data-check-type="positon" rel="结算服务">结算服务</a>
+							<a href="javascript:;" data-check-type="positon" rel="结算管理">结算管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="结算管理">结算规划</a>
+							<a href="javascript:;" data-check-type="positon" rel="结算质检">结算质检</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="贷后预警">贷后预警</a>
+							<a href="javascript:;" data-check-type="positon" rel="贷款审批">贷款审批</a>
+							<a href="javascript:;" data-check-type="positon" rel="资产保全">资产保全</a>
+							<a href="javascript:;" data-check-type="positon" rel="资信调查">资信调查</a>
+							<a href="javascript:;" data-check-type="positon" rel="资金管理">资金管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="金融会计 ">金融会计 </a>
+							<a href="javascript:;" data-check-type="positon" rel="银行合作 ">银行合作 </a>
+							<a href="javascript:;" data-check-type="positon" rel="风控 ">风控 </a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>销售类</span>
+							<a href="javascript:;" data-check-type="positon" rel="Incall">Incall</a>
+							<a href="javascript:;" data-check-type="positon" rel="业务支持">业务支持</a>
+							<a href="javascript:;" data-check-type="positon" rel="业务运营">业务运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="产品运营">产品运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="在线销售">在线销售</a>
+							<a href="javascript:;" data-check-type="positon" rel="外贸服务">外贸服务</a>
+							<a href="javascript:;" data-check-type="positon" rel="渠道管理">渠道管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="电销">电销</a>
+							<a href="javascript:;" data-check-type="positon" rel="直销">直销</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="资源管理">资源管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="运营">运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="销售品控">销售品控</a>
+							<a href="javascript:;" data-check-type="positon" rel="销售策划">销售策划</a>
+						</div>
+						<div style="display:none;">
+							<a href="javascript:;" class="close">x</a>
+							<span>外贸类</span>
+							<a href="javascript:;" data-check-type="positon" rel="产品运营">产品运营</a>
+							<a href="javascript:;" data-check-type="positon" rel="信用证">信用证</a>
+							<a href="javascript:;" data-check-type="positon" rel="外汇及银行">外汇及银行</a>
+							<a href="javascript:;" data-check-type="positon" rel="流程控制">流程控制</a>
+							<a href="javascript:;" data-check-type="positon" rel="物流">物流</a>
+							<a href="javascript:;" data-check-type="positon" rel="综合管理">综合管理</a>
+							<a href="javascript:;" data-check-type="positon" rel="融资">融资</a>
+							<a href="javascript:;" data-check-type="positon" rel="退税">退税</a>
+							<a href="javascript:;" data-check-type="positon" rel="退税支持">退税支持</a>
+							<a href="javascript:;" data-check-type="positon" rel="通关">通关</a>
+							<a href="javascript:;" data-check-type="positon" rel="通关支持">通关支持</a>
+							<a href="javascript:;" data-check-type="positon" rel="风控">风控</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-list-box">
+				<table class="table-list">
+					<thead>
+						<tr>
+							<th width="40%"><span>职位名称</span></th>
+							<th width="13%"><span>职位类别</span></th>
+							<th width="13%"><span>工作地点</span></th>
+							<th width="10%"><span>招聘人数</span></th>
+							<th width="15%"><span>更新时间</span></th>
+							<th><span>&nbsp;</span></th>
+						</tr>
+					</thead>
+					<tbody id="J-list-box">
+					</tbody>
+				</table>
+				<div class="no-data" id="J-list-no-data"><span></span></div>
+				<div class="page-box layout">
+					<div id="J-pagination" class="pagination-box"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    window.pageConfig = {
+        getPositionListUrl: "//job.alibaba.com/zhaopin/socialPositionList/doList.json",
+        dressData         : "//job.alibaba.com/assets/zhaopin/js/data/dress-data.js",
+        pageSize          : 10,
+        loginDomain       : "https://passport.alibaba.com/",
+        loginOut          : "https://job.alibaba.com/zhaopin/logout.htm",
+        loginUrl          : '//job.alibaba.com/zhaopin/loginCallBack/doLogin.json',
+        hostDomin         : "https://job.alibaba.com/zhaopin/",
+        token             : "uLYBnIU1Cis",
+        dreamerPositionId : "37293"
+    }
+    seajs.use("app/position.list");
+    seajs.use("app/login.mesg");
+
+    seajs.use(['$'], function ($) {
+        $(".banner-12").click(function () {
+            $("#keyword").focus().val("无所不能的Java人");
+            $(".search-btn").click();
+        })
+    });
+</script>
+
+		<div class="footer mg-t20 align-c" id="footer">
+		<div class="friend">
+			<ul class="inline">
+				<li><a href="http://page.china.alibaba.com/shtml/about/ali_group1.shtml?spm=0.0.0.0.ImeflK&amp;file=ali_group1.shtml" target="_blank" title="阿里巴巴集团">阿里巴巴集团</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://china.alibaba.com/?tracelog=cnindex_sep_home_bottom" target="_blank" title="阿里巴巴中国站">阿里巴巴中国站</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.alibaba.com/" target="_blank" title="阿里巴巴国际站">阿里巴巴国际站</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.aliexpress.com/" target="_blank" title="全球速卖通">全球速卖通</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.taobao.com/" target="_blank" title="淘宝网">淘宝网</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.tmall.com/" target="_blank" title="天猫">天猫</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.alipay.com/" target="_blank" title="支付宝">支付宝</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.aliyun.com/" target="_blank" title="阿里云">阿里云</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://ju.taobao.com/" target="_blank" title="聚划算">聚划算</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.etao.com/" target="_blank" title="一淘">一淘</a></li>
+				<li class="divider">|</li>
+				<li><a href="http://www.alizhaopin.com/" target="_blank" title="淘工作">淘工作</a></li>
+				<li class="divider">|</li>
+				<li><a title="Official Website" target="_blank" href="https://campus.alibaba.com/en/homepage ">Official Website (EN)</a></li>
+			</ul>
+		</div>
+		<div class="statement">
+			<ul class="inline">
+				<li>&copy;1999-2019 阿里巴巴集团 版权所有</li>
+				<li class="weibo-box">
+					<a href="http://weibo.com/staffing" target="_blank">阿里巴巴集团招聘<i class="icon icon-bv"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<!--[if IE 6]><script src="//job.alibaba.com/assets/zhaopin/js/lib/png-min.js" type="text/javascript"></script><script type="text/javascript">(function(){DD_belatedPNG.fix(".logo,.more-icon,.resume-info h2 .show-more,.info-gray-bar");})();</script>
+	<![endif]-->
+
+</body>
+<script type="text/javascript">
+	var cnzz_s_tag = document.createElement('script');
+	cnzz_s_tag.type = 'text/javascript';
+	cnzz_s_tag.async = true;
+	cnzz_s_tag.charset = "utf-8";
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	cnzz_s_tag.src = cnzz_protocol + "w.cnzz.com/q_stat.php?id=1000004769&async=1";
+	var root_s = document.getElementsByTagName('script')[0];
+	root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+	if (window.location.href.indexOf('acjoinus') >= 0) {
+		var acjoinusValue = window.location.href.split('acjoinus=')[1];
+		acjoinusValue = acjoinusValue && acjoinusValue.split('&')[0];
+		var menuModule = document.getElementById('menu');
+		var menuLinks = menuModule.getElementsByTagName('a');
+		if (document.getElementById('J-login')) {
+			var J_login = document.getElementById('J-login');
+			var J_loginLinks = J_login.getElementsByTagName('a');
+			addLinkParam(J_loginLinks);
+		}
+		addLinkParam(menuLinks);
+		addLinkParam(document.getElementsByClassName('logo'));
+		function addLinkParam(arr) {
+			var newArr = arr ? (arr.length >= 0 ? arr : []) : [];
+			for(var i=0,item; item=newArr[i++];) {
+				var link = item.getAttribute('href');
+				if(link.indexOf('?') >= 0) {
+					link += '&acjoinus=' + acjoinusValue;
+				}else {
+					link += '?acjoinus=' + acjoinusValue;
+				}
+				item.setAttribute('href', link);
+			}
+		}
+	}
+</script>
+</html>
